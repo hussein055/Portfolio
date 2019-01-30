@@ -1,0 +1,45 @@
+body{
+    background-color: #2E2E2E;
+    margin-top: 0;
+    
+}
+ 
+nav{
+    margin-top: -15px;
+    padding: 10px;
+    background-color: #111111;
+    
+} 
+
+ul{
+     overflow: hidden;
+     width: 100%;
+     display: block;
+    
+    
+}
+
+.blue{
+    color: blue;
+    font-size: 40px;
+    font-family: Arial, Times New Roman;
+    border-right: 5px solid #363636;
+    text-align: center;
+    
+}
+
+li{
+    
+    float: left;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    padding: 8px;
+    font-size: 2em;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
