@@ -1,6 +1,7 @@
 body{
     background-color: #2E2E2E;
     margin-top: 0;
+    width: 100%;
     
 }
  
@@ -8,17 +9,16 @@ body{
   Navigation / Menu
  ///////////////////////////////////////////////////////////*/
 nav{
-    margin: -20px -20px 0 -20px;
+    margin: 0;
     padding: 10px;
     background-color: #111111;
     
 } 
 
-ul{
-     overflow: hidden;
-     width: 100%;
-     display: block;
-    
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -26,15 +26,15 @@ ul{
     color: blue;
     font-size: 40px;
     font-family: Arial, Times New Roman;
-    border-right: 5px solid #363636;
-    text-align: center;
     
+}
+li:hover{
+    border: solid 3px #484848; 
+    background-color: #606060;
 }
 
 li{
     
-    float: left;
-    text-align: center;
     color: white;
     list-style-type: none;
     padding: 8px;
@@ -46,6 +46,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
  
   /*////////////////////////////////////////////////////////////
    Log In form
@@ -53,19 +54,80 @@ a{
  
  #sign_in{
      background-color: #DCDCDC;
+     padding-bottom: 5px;
+     margin: 0  ;
      
  }
  
- form {
-     border: 3px solid #f1f1f1;
+ #sign_in form {
+     
  }
-
- input[type=text], input[type=password]{
-     width: 100%;
+ 
+.log_in {
+    overflow: auto;
+     
+    }
+    
+ .log_in button {
+     font-size: 20px ;
+     float: right;
+ }
+ .log_in button:hover{
+     color: #696969;
+     display: block;
+     
+ }
+ 
+  input[type=text], input[type=password], input[type=email]{
+     width: 90%;
      padding: 12px 12px;
      margin: 8px 0;
      display: inline-block;
      border:1px solid #ccc;
-     box-sizing: border-box;
+     border-radius: 5px;
+     
+ }
+ /*//////////////////////////////////////////////////////////////////
+  Contact Us Form
+ /////////////////////////////////////////////////////////////////*/
+ #contact{
+     background-color: #DCDCDC;
+     padding-bottom: 5px;
+     margin: 0;
  }
  
+ #contact form{
+     border: 3px solid #f1f1f1;
+ }
+ 
+ 
+  /*/////////////////////////////////////////////////////////////////
+ Media Queries
+ ////////////////////////////////////////////////////////////////*/
+ 
+ 
+ /*////////////////////////////////////////////////////////////////
+  Phones
+ ////////////////////////////////////////////////////////////////*/
+ @media only screen and (min-width: 768px){
+     nav ul{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         
+     }
+     
+     .blue {
+         margin-right: auto;
+         border-right: 5px solid #363636; 
+     }
+ }
+ /*///////////////////////////////////////////////////////////////
+ Tablets
+////////////////////////////////////////////////////////////////*/
+@media only sceen and (min-width: 992){
+    .blue{
+        border-right: 5px solid #363636; 
+        
+    }
+}

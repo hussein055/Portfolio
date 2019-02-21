@@ -10,7 +10,7 @@
         <br>
         <nav>
             
-            <ul>
+            <ul class = 'nav_menu'>
                 <li class = 'blue'>Logo</li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -23,9 +23,6 @@
         
         <div id="sign_in">
           <form>
-              <div class = 'img'>
-                  <p>Images Here</p>
-              </div>
               <div class = 'log_in'>
                   <label for = 'uname'>Username</label> 
                   <input type= 'text' placeholder = 'Enter Username' name = 'uname'>
@@ -49,8 +46,16 @@
 
         </div>
         <div id="contact">
-            <h2>Contact Us</h2>
-            
+
+            <form class = 'message_us'>
+                <h2>Contact Us</h2> 
+                
+                <input type = 'text' placeholder = 'First Name' name = 'fname'>
+                <input type = 'text' placeholder = 'Last Name' name = 'lname'> 
+                <input type = 'email' placeholder = "Enter your Email" name = 'email'>
+                <input type = 'text' placeholder = 'Questions/Comments' style = 'height: 200px'>
+                <input type = 'submit' value = "submit">
+            </form>
 
         </div>
         <div id="mission">
