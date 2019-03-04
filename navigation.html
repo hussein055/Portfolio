@@ -16,7 +16,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#team">Team</a></li>
-                <li>Sign in</li>
+                <li class = 'get_it'>Sign in</li>
             </ul>
             
         </nav>
@@ -27,7 +27,7 @@
                   <label for = 'uname'>Username</label> 
                   <input type= 'text' placeholder = 'Enter Username' name = 'uname'>
                   
-                  <label for = 'pwd'>Password</label>
+                  <label for = 'pwd'>Password</label><br>
                   <input type = 'password' placeholder = 'Enter Password' name ='pwd'>
                   
                   <button type = 'submit'>Login</button>
@@ -36,9 +36,23 @@
 
         </div>
         
-         <div id="Team">
-            <h2>Our Team</h2>
-
+        <div class = 'team_heading'><h2>Our Team</h2></div>
+        
+         <div id="team">
+           
+            <div class = 'column1 columns'>
+                <p>Lorem ipsum sociosqu cras ante bibendum lobortis hendrerit, molestie tellus faucibus sodales tincidunt senectus, 
+                quisque egestas vulputate placerat torquent suscipit.</p>
+            </div>
+           
+           <div class = 'column2 columns'>
+                 <p>Dolor vivamus morbi quisque torquent pharetra pretium molestie conubia, senectus mauris ornare placerat est
+                 tortor diam vulputate, turpis condimentum donec ligula convallis in fusce.</p>
+            </div>
+            <div class = 'column3 columns'>
+                <p>Adipiscing commodo convallis dolor metus curabitur nulla tortor vehicula phasellus congue, platea tempor torquent augue non primis ut conubia arcu etiam convallis neque sit curae felis, quisque cubilia orci blandit amet, accumsan iaculis curabitur purus gravida volutpat malesuada ultricies scelerisque aenean enim aliquam maecenas quis, hendrerit semper ullamcorper turpis arcu ad molestie, libero odio proin porttitor porta primis est 
+                aliquam, aptent metus morbi nullam ut sociosqu quam gravida ullamcorper potenti blandit aliquam.</p>    
+            </div>
         </div>
         <div id="about">
             <h2>About us</h2>
@@ -55,6 +69,7 @@
                 <input type = 'email' placeholder = "Enter your Email" name = 'email'>
                 <input type = 'text' placeholder = 'Questions/Comments' style = 'height: 200px'>
                 <input type = 'submit' value = "submit">
+                <input type = 'button' value = 'cancel'>
             </form>
 
         </div>
