@@ -1,8 +1,6 @@
 body{
     background-color: #2E2E2E;
     margin-top: 0;
-    width: 100%;
-    
 }
  
  /*////////////////////////////////////////////////////////////
@@ -60,40 +58,35 @@ a{
      background-color: #DCDCDC;
      padding-bottom: 5px;
      margin: 0  ;
-     
+     border-radius: 5px;
  }
  
- #sign_in form {
-     
- }
  
-.log_in {
-    overflow: auto;
-     
-    }
+
     
  .log_in button {
      font-size: 20px ;
-     float: right;
+     display: inline-block;
+     margin: 8px;
  }
  
  .log_in button:hover{
      color: #696969;
-     display: block;
+    
      
  }
- input[type=password], label[for=pwd]{
-     clear: right;
+ label[for=uname], label[for=pwd]{
+     margin: 5px;
  }
  
   input[type=text], input[type=password], input[type=email]{
      width: 90%;
      padding: 12px 12px;
-     margin: 8px 0;
+     margin: 8px ;
      display: inline-block;
      border:1px solid #ccc;
      border-radius: 5px;
-     
+     clear: both;
  }
  
  /*/////////////////////////////////////////////////////////
@@ -102,7 +95,7 @@ a{
 #team{
     display: flex;
     width: 90%;
-    align-content: center;
+    justify-content: center;
     margin: 10px;
     
 }
@@ -118,7 +111,9 @@ a{
  }
  
  .columns {
-    margin-right: 10px;  
+    text-align: center;
+    text-align: left;
+    margin-right: 5px;
  }
  
  .column1{
@@ -160,6 +155,7 @@ a{
  input[type=submit], input[type=button]{
      display: inline-block;
      padding: 10px;
+     margin-left: 8px;
      
  }
  /*input[type=cancel]{*/
