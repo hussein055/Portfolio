@@ -92,9 +92,9 @@ a{
  /*/////////////////////////////////////////////////////////
  our team
  ////////////////////////////////////////////////////////*/
-#team{
+#team, #about{
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     margin: 10px;
     
@@ -106,28 +106,28 @@ a{
  }
  
  p{
-     font-size: 20px;
+     font-size: 30px;
      color: white;
  }
  
  .columns {
     text-align: center;
-    text-align: left;
     margin-right: 5px;
+    display: inline-block;
  }
  
  .column1{
-    width: 15%;
+    width: 25%;
     order: 1;
  }
  
  .column2{
-     width: 15%;
+     width: 25%;
      order: -1;
  }
  
  .column3{
-     width: 60%;
+     width: 50%;
      order: 0;
  }
 
@@ -185,7 +185,7 @@ a{
      
     /*coumns*/
     
-    #team{
+    #team, #about{
         width: 100%;
         flex-direction: column;
         align-content: center;
